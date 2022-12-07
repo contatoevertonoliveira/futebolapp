@@ -1,0 +1,132 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block 'head' %}
+    <link href="{% static 'home/css/home.css' %}" rel="stylesheet">
+{% endblock%}
+
+{% block 'menu' %}
+  <li class="nav-item pcoded-menu-caption">
+    <label>Navegação</label>
+  </li>
+  <li class="nav-item active">
+    <a href="#" class="nav-link "><span class="pcoded-micon"><i class="feather icon-home"></i></span><span class="pcoded-mtext">Dashboard</span></a>
+  </li>
+  <li class="nav-item pcoded-menu-caption">
+    <label>Campeonatos pelo Mundo</label>
+  </li>
+  <li class="nav-item">
+    <a href="form_elements.html" class="nav-link ">
+      <span class="pcoded-micon">
+        <img src="https://crests.football-data.org/qatar.png" width="30">
+      </span>
+      <span class="pcoded-mtext ml-2">FIFA World Cup</span></a>
+  </li>
+  <li data-username="Table bootstrap datatable footable" class="nav-item">
+    <a href="tbl_bootstrap.html" class="nav-link ">
+      <span class="pcoded-micon"><img src="https://crests.football-data.org/CL.png" width="30"></span>
+      <span class="pcoded-mtext ml-2">UEFA Champions League</span>
+    </a>
+  </li>
+  <li class="nav-item">
+  <a href="tbl_bootstrap.html" class="nav-link ">
+    <span class="pcoded-micon"><img src="https://crests.football-data.org/EUR.svg" width="30"></span>
+    <span class="pcoded-mtext ml-1">European Championship</span>
+  </a>
+  </li>
+  <li class="nav-item">
+  <a href="tbl_bootstrap.html" class="nav-link ">
+    <span class="pcoded-micon"><img src="https://crests.football-data.org/CLI.svg" width="30"></span>
+    <span class="pcoded-mtext ml-2">Copa Libertadores</span>
+  </a>
+  </li>
+  <li class="nav-item pcoded-hasmenu">
+    <a href="javascript:" class="nav-link ">
+      <span class="pcoded-micon"><img src="https://crests.football-data.org/764.svg" alt="Brasil"></span>
+      <span class="pcoded-mtext">Brasil</span>
+    </a>
+    <ul class="pcoded-submenu">
+        <li class="">
+          <a href="auth-signup.html" class="" target="_blank">
+            <span class="pcoded-micon"><img src="https://upload.wikimedia.org/wikipedia/commons/d/d3/Soccerball.svg" width="15"></span>
+            <span class="pcoded-mtext">Brasileiro Série A</span>
+          </a>
+        </li>
+        <li class="">
+          <a href="auth-signup.html" class="" target="_blank">
+            <span class="pcoded-micon"><img src="https://upload.wikimedia.org/wikipedia/commons/d/d3/Soccerball.svg" width="15"></span>
+            <span class="pcoded-mtext">Brasileiro Série B</span>
+          </a>
+        </li>
+        <li class="">
+          <a href="auth-signin.html" class="" target="_blank">
+            <span class="pcoded-micon"><img src="https://upload.wikimedia.org/wikipedia/commons/d/d3/Soccerball.svg" width="15"></span>
+            <span class="pcoded-mtext">Copa do Brasil</span>
+          </a>
+        </li>
+    </ul>
+  </li>
+  <li class="nav-item pcoded-hasmenu">
+  <a href="javascript:" class="nav-link ">
+    <span class="pcoded-micon"><img src="https://crests.football-data.org/770.svg" alt="Inglaterra"></span>
+    <span class="pcoded-mtext">Inglaterra</span>
+  </a>
+  <ul class="pcoded-submenu">
+      <li class=""><a href="auth-signup.html" class="" target="_blank">* Premier League *</a></li>
+      <li class=""><a href="auth-signup.html" class="" target="_blank">* Champions *</a></li>
+  </ul>
+  </li>
+  <li class="nav-item pcoded-hasmenu">
+  <a href="javascript:" class="nav-link ">
+    <span class="pcoded-micon"><img src="https://crests.football-data.org/760.svg" alt="Brasil"></span>
+    <span class="pcoded-mtext">Espanha</span>
+  </a>
+  <ul class="pcoded-submenu">
+      <li class=""><a href="auth-signup.html" class="" target="_blank">Primeira Divisão</a></li>
+  </ul>
+  </li>
+  <li class="nav-item pcoded-hasmenu">
+  <a href="javascript:" class="nav-link ">
+    <span class="pcoded-micon"><img src="https://crests.football-data.org/759.svg" alt="Brasil"></span>
+    <span class="pcoded-mtext">Alemanha</span>
+  </a>
+  <ul class="pcoded-submenu">
+      <li class=""><a href="auth-signup.html" class="" target="_blank">Bundesliga</a></li>
+  </ul>
+  </li>
+  <li class="nav-item pcoded-hasmenu">
+  <a href="javascript:" class="nav-link ">
+    <span class="pcoded-micon"><img src="https://crests.football-data.org/773.svg" alt="França"></span>
+    <span class="pcoded-mtext">França</span>
+  </a>
+  <ul class="pcoded-submenu">
+      <li class=""><a href="auth-signup.html" class="" target="_blank">Liga 1</a></li>
+  </ul>
+  </li>
+  <li class="nav-item pcoded-hasmenu">
+  <a href="javascript:" class="nav-link ">
+    <span class="pcoded-micon"><img src="https://crests.football-data.org/765.svg" alt="Brasil"></span>
+    <span class="pcoded-mtext">Portugal</span>
+  </a>
+  <ul class="pcoded-submenu">
+      <li class=""><a href="auth-signup.html" class="" target="_blank">Primeira Liga</a></li>
+  </ul>
+  </li>
+  <li class="nav-item pcoded-hasmenu">
+  <a href="javascript:" class="nav-link ">
+    <span class="pcoded-micon"><img src="https://crests.football-data.org/784.svg" alt="Italia"></span>
+    <span class="pcoded-mtext">Itália</span>
+  </a>
+  <ul class="pcoded-submenu">
+      <li class=""><a href="auth-signup.html" class="" target="_blank">Serie A</a></li>
+  </ul>
+  </li>
+  <li class="nav-item pcoded-hasmenu">
+  <a href="javascript:" class="nav-link ">
+    <span class="pcoded-micon"><img src="https://crests.football-data.org/8601.svg" alt="Brasil"></span>
+    <span class="pcoded-mtext">Holanda</span>
+  </a>
+  <ul class="pcoded-submenu">
+      <li class=""><a href="auth-signup.html" class="" target="_blank">Eredivisie</a></li>
+  </ul>
+  </li>
+{% endblock %}
