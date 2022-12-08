@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block 'head' %}
+    <link href="{% static 'fifawc/css/fifawc.css' %}" rel="stylesheet">
+{% endblock%}
+
+{% block 'header_content' %}
+  <li class="nav-item dropdown">
+    <span class="pcoded-micon">
+        <img src="https://crests.football-data.org/qatar.png" width="30">
+    </span>
+    <span class="pcoded-mtext ml-2">FIFA World Cup</span></a>
+  </li>
+  <li class="nav-item">
+    <div class="main-search">
+        <div class="input-group">
+            <input type="text" id="m-search" class="form-control" placeholder="Search . . .">
+            <a href="javascript:" class="input-group-append search-close">
+                <i class="feather icon-x input-group-text"></i>
+            </a>
+            <span class="input-group-append search-btn btn btn-primary">
+                <i class="feather icon-search input-group-text"></i>
+            </span>
+        </div>
+    </div>
+  </li>
+{% endblock %}

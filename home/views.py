@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 import requests
 import json
 
@@ -9,3 +9,6 @@ def home(request):
   todos = json.loads(response.content)
 
   return render(request, 'home.html', {'competitions':todos['competitions']})
+
+def fifawc(request):
+  return render(request, 'fifawc.html')
